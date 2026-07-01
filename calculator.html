@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<link rel="stylesheet" href="calculator_style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<body>
+    <div id="Calculator">
+        <div id="input-text-field">
+            <input type="text" readonly id="display">
+        </div>
+        <div id="keys">
+            <button onclick="return clearDisplay()">AC</button>
+            
+            <button onclick="return remove()"><i class="bi bi-backspace"></i></button>
+
+            <button onclick="return numberDisplay('%')">%</button>
+
+            <button onclick="return numberDisplay('/')" class="op">/</button>
+
+
+            <button onclick="return numberDisplay('7')">7</button>
+            <button onclick="return numberDisplay('8')">8</button>
+            <button onclick="return numberDisplay('9')">9</button>
+
+            <button onclick="return numberDisplay('*')" class="op">X</button>
+
+            <button onclick="return numberDisplay('4')">4</button>
+            <button onclick="return numberDisplay('5')">5</button>
+            <button onclick="return numberDisplay('6')">6</button>
+
+            <button onclick="return numberDisplay('-')" class="op">-</button>
+
+
+
+            <button onclick="return numberDisplay('1')">1</button>
+            <button onclick="return numberDisplay('2')">2</button>
+            <button onclick="return numberDisplay('3')">3</button>
+
+            <button onclick="return numberDisplay('+')" class="op">+</button>
+
+            <button onclick="return numberDisplay('0')">0</button>
+            <button onclick="return numberDisplay('.')">.</button>
+
+            <button id="calculate" onclick="return calculate()">=</button>
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+
+</html>
